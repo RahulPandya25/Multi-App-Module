@@ -10,16 +10,23 @@
 	</parent>
 	<groupId>com.module.app.multi</groupId>
 	<artifactId>packager</artifactId>
+	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>packager</name>
 	<description>This Project encapsulates lot of other backend apps so to enable hosting on same sever</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+
+	<modules>
+		<module>shrink-my-url</module>
+		<module>demo-app</module>
+	</modules>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
